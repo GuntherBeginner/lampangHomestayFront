@@ -105,11 +105,9 @@ export default function Album() {
                                     <CardMedia
                                         component="img"
                                         sx={{
-                                            // 16:9
-                                            pt: '56.25%',
+                                            16:9
                                         }}
-                                        image="https://source.unsplash.com/random"
-                                        alt="random"
+                                        image="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000"
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         
