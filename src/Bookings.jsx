@@ -18,8 +18,8 @@ export default function BookingsList() {
 
     const dateFormat = "YYYY-MM-DD"
     const URL = "https://odd-handbag-jay.cyclic.app"
-
     const [bookings, setBookings] = useState([]);
+
     useEffect(() => {
         const check = localStorage.getItem("username");
 
@@ -27,8 +27,9 @@ export default function BookingsList() {
             window.location.href = '/';
             return;
         }
-
+        
         BookingsGet()
+
     }, [])
 
     const BookingsGet = () => {
