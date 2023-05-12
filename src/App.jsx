@@ -16,8 +16,7 @@ export default function App() {
     const check = localStorage.getItem("username");
     setLogincheck(!!check)
   }, [])
-
-
+  
   return (
     <div>
       {logincheck && <Navbar />}
