@@ -33,6 +33,8 @@ function Copyright() {
 
 const cards = [1, 2, 3];
 
+const imageWeb = ['src/assets/img/picturePJ_1.jpg', 'src/assets/img/picturePJ_2.jpg', 'src/assets/img/picturePJ_3.jpg'];
+
 const theme = createTheme();
 
 export default function Album() {
@@ -94,6 +96,7 @@ export default function Album() {
                         </Stack>
                     </Container>
                 </Box>
+
                 <Container sx={{ py: 8 }} maxWidth="md">
                     {/* End hero unit */}
                     <Grid container spacing={4}>
@@ -105,13 +108,13 @@ export default function Album() {
                                     <CardMedia
                                         component="img"
                                         sx={{
-                                            16:9
+                                            16: 9
                                         }}
-                                        image="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000"
+                                        image={'src/assets/img/picturePJ_1.jpg'}
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
-                                        
-                                        <Typography gutterBottom variant="h5" component="h2" align="center"> 
+
+                                        <Typography gutterBottom variant="h5" component="h2" align="center">
                                             ROOM
                                         </Typography>
                                         <Typography align="center">
@@ -119,7 +122,6 @@ export default function Album() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small"> View detail</Button>
                                     </CardActions>
                                 </Card>
                             </Grid>
